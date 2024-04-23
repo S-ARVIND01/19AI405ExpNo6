@@ -101,6 +101,7 @@ def minimax(game)
         return scores[min_score_index]
     end
 <h2>Program</h2>
+
 ```
 import time
 
