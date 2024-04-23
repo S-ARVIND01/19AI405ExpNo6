@@ -100,9 +100,7 @@ def minimax(game)
         @choice = moves[min_score_index]
         return scores[min_score_index]
     end
-end
 <h2>Program</h2>
-
 ```
 import time
 
@@ -114,10 +112,8 @@ class Game:
         self.current_state = [['.','.','.'],
                               ['.','.','.'],
                               ['.','.','.']]
-
         # Player X always plays first
         self.player_turn = 'X'
-
     def draw_board(self):
         for i in range(0, 3):
             for j in range(0, 3):
@@ -145,7 +141,7 @@ class Game:
                 return 'X'
             elif (self.current_state[i] == ['O', 'O', 'O']):
                 return 'O'
-
+                
     # Main diagonal win
         if (self.current_state[0][0] != '.' and
             self.current_state[0][0] == self.current_state[1][1] and
